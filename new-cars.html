@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&M Leasing</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="conteiner">
+          <div class="header-conteiner">
+            <div class="logo">
+                <a href="index.html">
+                  <img
+                    class="logo-img"
+                    src="images/Logo.svg"
+                    alt="logo"
+                    width="83"
+                    height="55"
+                  />
+                </a>
+              </div>
+              <nav class="header-nav">
+                <ul class="header-list">
+                  <li class="header-item">
+                    <a href="new-cars.html" class="header-link header-link--active">NEW CARS</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link">PRE-OWNED CARS</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link">FINANCE</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link">LEASE VS BUY</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="contacts.html" class="header-link">CONTACT US</a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+
+          <!-- Menu - Slider -->
+          <div class="header-menu-mobile">
+            <button onclick="toggleDropdown()" class="header-menu-mobile__btn">
+              <img src="images/menu.png" alt="menu" />
+            </button>
+            <div id="menu" class="header-menu-mobile__slider disp">
+              <ul class="header-list">
+                <li class="header-item">
+                  <a href="#" class="header-link block">NEW CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">PRE-OWNED CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">FINANCE</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">LEASE VS BUY</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+
+        <!-- Choose your car -->
+        <section class="choose-cars">
+            <div class="conteiner">
+                <h2 class="choose-cars__title h2">
+                    Choose your car
+                </h2>
+                <div class="choose-cars__tabs">
+                    <button class="choose-cars__tab-btn h3 choose-cars__tab-btn--active" data-button="content1">Car and Minivan</button>
+                    <button class="choose-cars__tab-btn h3" data-button="content2">Trucks</button>
+                    <button class="choose-cars__tab-btn h3" data-button="content3">Crossovers & SUVs</button>
+                    <button class="choose-cars__tab-btn h3" data-button="content4">Electrified</button>
+                </div>
+                <div class="choose-cars__tab-content">
+                    <div class="choose-cars__tab-item choose-cars__tab-item--active" id="content1">
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car1.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3"> Toyota Crown 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 650/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car2.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Prius Prime 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 450/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car3.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Toyota Prius 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 400/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car4.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Hyundai Kona 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 510/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                    </div>
+                    <div class="choose-cars__tab-item" id="content2">
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car8.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Chevrolet Silverado</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$1,032/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car12.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Jeep Wrangler 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 97/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                    </div>
+                    <div class="choose-cars__tab-item" id="content3">
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car5.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Ford Explorer 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$1,013/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car6.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Santa  Fe 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 739/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car7.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">KIA Niro 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 554/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car9.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Honda CR-V 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 591/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car10.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Hyundai Tucson</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 528/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car11.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Chevrolet Equinox </h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 528/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                    </div>
+                    <div class="choose-cars__tab-item" id="content4">
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car11.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Chevrolet Equinox </h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 528/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car7.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">KIA Niro 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 554/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car1.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3"> Toyota Crown 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 650/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car2.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Prius Prime 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 450/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                        <div class="choose-cars__tab-card">
+                            <img src="images/car3.png" alt="car" class="choose-cars__card-img">
+                            <h3 class="choose-cars__card-title h3">Toyota Prius 2023</h3>
+                            <p class="choose-cars__card-text">starting from $ 39900</p>
+                            <p class="choose-cars__card-price h3">$ 400/mo</p>
+                            <a href="#" class="choose-cars__card-link">see details</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="choose-cars__btn button">SHOW MORE</button>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section class="Section">
+            <div class="conteiner">
+                <div class="section-conteiner">
+                    <div class="section__card1">
+                        <img src="images/foto1.png" alt="car" class="section__card-img">
+                        <div class="section__card-content">
+                            <h3 class="section__card-title h3">
+                                An easier way to buy your next Toyota
+                            </h3>
+                            <a href="#" class="section__card-link">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section__card2">
+                        <img src="images/foto2.png" alt="dog" class="section__card-img">
+                        <div class="section__card-content">
+                            <h3 class="section__card-title h3">
+                                An easier way to buy your next Toyota
+                            </h3>
+                            <a href="#" class="section__card-link">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="section__btn button">SHOW MORE</button>
+            </div>
+        </section>
+
+      </main>
+
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="conteiner">
+          <div class="footer__conteiner-link">
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Products</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Used</li>
+                <li class="footer__item">New</li>
+                <li class="footer__item">Sell your car</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Resources</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Blog</li>
+                <li class="footer__item">FAQ</li>
+                <li class="footer__item">Contact us</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Work With TrueCar</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Dealers</li>
+                <li class="footer__item">Partners</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">About</h3>
+              <ul class="footer__list">
+                <li class="footer__item">About us</li>
+                <li class="footer__item">Team</li>
+                <li class="footer__item">Careers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__conteiner-mob">
+            <img src="images/icon-apple.svg" alt="apple" class="footer__img" />
+            <img
+              src="images/icon-google.svg"
+              alt="google"
+              class="footer__img"
+            />
+          </div>
+          <p class="footer__text">
+            For questions about the TrueCar Auto Buying Service please call
+            1-888-878-3227. Certified Dealers are contractually obligated by
+            TrueCar to meet certain customer service requirements and complete
+            the TrueCar Dealer Certification Program. TrueCar does not broker,
+            sell, or lease motor vehicles. Unless otherwise noted, all vehicles
+            shown on this website are offered for sale by licensed motor vehicle
+            dealers. All vehicles are subject to prior sale. By accessing this
+            website, you agree to the TrueCar Terms of Service and Privacy
+            Policy.
+          </p>
+          <ul class="footer__conteiner-text">
+            <li class="footer__text-item">Terms of Service</li>
+            <li class="footer__text-item">Privacy Policy</li>
+            <li class="footer__text-item">Do Not Sell My Personal Information</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

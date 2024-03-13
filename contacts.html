@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&M Leasing</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="conteiner">
+          <div class="header-conteiner">
+            <div class="logo">
+                <a href="index.html">
+                  <img
+                    class="logo-img"
+                    src="images/Logo.svg"
+                    alt="logo"
+                    width="83"
+                    height="55"
+                  />
+                </a>
+              </div>
+              <nav class="header-nav">
+                <ul class="header-list">
+                  <li class="header-item">
+                    <a href="new-cars.html" class="header-link">NEW CARS</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link">PRE-OWNED CARS</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link">FINANCE</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link">LEASE VS BUY</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="contacts.html" class="header-link header-link--active">CONTACT US</a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+
+          <!-- Menu - Slider -->
+          <div class="header-menu-mobile">
+            <button onclick="toggleDropdown()" class="header-menu-mobile__btn">
+              <img src="images/menu.png" alt="menu" />
+            </button>
+            <div id="menu" class="header-menu-mobile__slider disp">
+              <ul class="header-list">
+                <li class="header-item">
+                  <a href="#" class="header-link block">NEW CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">PRE-OWNED CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">FINANCE</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">LEASE VS BUY</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+
+    <!-- Contacts -->
+        <section class="contact">
+            <div class="conteiner">
+                <h2 class="contact__title h2">
+                    Contact Us
+                </h2>
+                <h3 class="contact__subtitle h3">
+                    Feel free to contact us with questions, potencial partnerships or media inquiries
+                </h3>
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input class="contact__input" type="text" placeholder="name">
+                        <input class="contact__input" type="email" placeholder="E-mail">
+                    </div>
+                    <textarea class="contact__textarea" cols="30" rows="10" placeholder="Your text"></textarea>
+                    <button class="contact__btn button" type="submit">
+                        SUBMIT
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section class="Section">
+            <div class="conteiner">
+                <div class="section-conteiner">
+                    <div class="section__card1">
+                        <img src="images/foto1.png" alt="car" class="section__card-img">
+                        <div class="section__card-content">
+                            <h3 class="section__card-title h3">
+                                An easier way to buy your next Toyota
+                            </h3>
+                            <a href="#" class="section__card-link">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section__card2">
+                        <img src="images/foto2.png" alt="dog" class="section__card-img">
+                        <div class="section__card-content">
+                            <h3 class="section__card-title h3">
+                                An easier way to buy your next Toyota
+                            </h3>
+                            <a href="#" class="section__card-link">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="section__btn button">SHOW MORE</button>
+            </div>
+
+        </section>
+
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="conteiner">
+          <div class="footer__conteiner-link">
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Products</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Used</li>
+                <li class="footer__item">New</li>
+                <li class="footer__item">Sell your car</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Resources</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Blog</li>
+                <li class="footer__item">FAQ</li>
+                <li class="footer__item">Contact us</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Work With TrueCar</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Dealers</li>
+                <li class="footer__item">Partners</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">About</h3>
+              <ul class="footer__list">
+                <li class="footer__item">About us</li>
+                <li class="footer__item">Team</li>
+                <li class="footer__item">Careers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__conteiner-mob">
+            <img src="images/icon-apple.svg" alt="apple" class="footer__img" />
+            <img
+              src="images/icon-google.svg"
+              alt="google"
+              class="footer__img"
+            />
+          </div>
+          <p class="footer__text">
+            For questions about the TrueCar Auto Buying Service please call
+            1-888-878-3227. Certified Dealers are contractually obligated by
+            TrueCar to meet certain customer service requirements and complete
+            the TrueCar Dealer Certification Program. TrueCar does not broker,
+            sell, or lease motor vehicles. Unless otherwise noted, all vehicles
+            shown on this website are offered for sale by licensed motor vehicle
+            dealers. All vehicles are subject to prior sale. By accessing this
+            website, you agree to the TrueCar Terms of Service and Privacy
+            Policy.
+          </p>
+          <ul class="footer__conteiner-text">
+            <li class="footer__text-item">Terms of Service</li>
+            <li class="footer__text-item">Privacy Policy</li>
+            <li class="footer__text-item">Do Not Sell My Personal Information</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

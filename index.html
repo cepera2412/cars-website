@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&M Leasing</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header header-main">
+        <div class="conteiner">
+          <div class="header-conteiner">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  class="logo-img"
+                  src="images/Logo.svg"
+                  alt="logo"
+                  width="83"
+                  height="55"
+                />
+              </a>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-list">
+                <li class="header-item">
+                  <a href="new-cars.html" class="header-link">NEW CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link">PRE-OWNED CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link">FINANCE</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link">LEASE VS BUY</a>
+                </li>
+                <li class="header-item">
+                  <a href="contacts.html" class="header-link">CONTACT US</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Menu - Slider -->
+          <div class="header-menu-mobile">
+            <button onclick="toggleDropdown()" class="header-menu-mobile__btn">
+              <img src="images/menu.png" alt="menu" />
+            </button>
+            <div id="menu" class="header-menu-mobile__slider disp">
+              <ul class="header-list">
+                <li class="header-item">
+                  <a href="#" class="header-link block">NEW CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">PRE-OWNED CARS</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">FINANCE</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">LEASE VS BUY</a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-link block">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="conteiner">
+            <div class="hero-conteiner">
+              <h1 class="hero-title h1">Leasing From D&M</h1>
+              <a href="new-cars.html" class="hero-btn button">FIND A CAR</a>
+            </div>
+          </div>
+        </section>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/slider1.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/slider2.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/slider3.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/slider4.jpg)"
+            ></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Why Lease -->
+        <section class="why">
+          <div class="conteiner">
+            <h2 class="why-title h2">Why Lease with D&M?</h2>
+            <ul class="why-card__list">
+              <li class="why-card__item">
+                <img
+                  src="images/icon-car.svg"
+                  alt="icon-car"
+                  class="why-card__img"
+                />
+                <h3 class="why-card__title h3">Top Dealers</h3>
+                <p class="why-card__text">
+                  TrueCar Certified Dealers compete for your business by
+                  providing discounted pricing on in-stock inventory.
+                </p>
+              </li>
+              <li class="why-card__item">
+                <img
+                  src="images/icon-proc.svg"
+                  alt="icon-%"
+                  class="why-card__img"
+                />
+                <h3 class="why-card__title h3">Discounted Pricing</h3>
+                <p class="why-card__text">
+                  View local inventory from the comfort of home and get access
+                  to guaranteed savings on the car of your choice.
+                </p>
+              </li>
+              <li class="why-card__item">
+                <img
+                  src="images/icon-card.svg"
+                  alt="icon-card"
+                  class="why-card__img"
+                />
+                <h3 class="why-card__title h3">Lower Payments</h3>
+                <p class="why-card__text">
+                  Get discounted pricing when you shop for a car or truck using
+                  TrueCar and save on your lease payment.
+                </p>
+              </li>
+              <li class="why-card__item">
+                <img
+                  src="images/icon-up.svg"
+                  alt="icon-up"
+                  class="why-card__img"
+                />
+                <h3 class="why-card__title h3">Easy Upgrade</h3>
+                <p class="why-card__text">
+                  Easy to upgrade to the newest vehicle model every few years if
+                  you would like to be modern and comfortable
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      <!-- How Does Leasing Work? -->
+      <section class="how">
+        <div class="conteiner">
+          <h2 class="how__title h2">How Does Leasing Work?</h2>
+          <div class="how_conteiner">
+            <p class="how__first-text">
+              Leasing a vehicle is essentially entering into a long term rental
+              agreement for that vehicle. Unlike a traditional car purchase, you
+              don’t actually own the vehicle. Instead, a leasing company
+              purchases the vehicle from the dealer on your behalf and then you
+              make monthly payments to the leasing company for the duration of
+              your lease. Some leases however, do provide the option to purchase
+              the vehicle at the end of the lease.
+            </p>
+            <h3 class="how__subtitle h3">
+              Similar to a short term car rental, there are rules that define:
+            </h3>
+            <div class="how__content">
+              <ul class="how__number-list">
+                <li class="how__number-item h2">1</li>
+                <li class="how__number-item h2">2</li>
+                <li class="how__number-item h2">3</li>
+              </ul>
+              <ul class="how__text-list">
+                <li class="how__text-item">
+                  How much you can drive, stated as annual miles (excess miles
+                  are charged at a specified rate)
+                </li>
+                <li class="how__text-item">
+                  Types of damage that you may be liable for at the end of your
+                  lease
+                </li>
+                <li class="how__text-item">
+                  The procedures and costs when you return the vehicle at the
+                  end of your lease
+                </li>
+              </ul>
+            </div>
+            <p class="how__lost-text">
+              Lease contracts are a commitment and ending them early can be
+              difficult and expensive so it is important to consider your
+              circumstances carefully before you decide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WELCOME TO D&M LEASING -->
+      <section class="welcome">
+        <div class="conteiner">
+          <h2 class="welcom__title h2">WELCOME TO D&M LEASING</h2>
+          <h3 class="welcom__subtitlt h3">
+            Find out how easy it is to lease from D&M
+          </h3>
+          <div class="welcom__video">
+            <iframe
+              width="1000"
+              height="500"
+              src="https://www.youtube.com/embed/8l_yAnEYuTs?si=z5JHjLR_YywvBsl3"
+              title="YouTube video player"
+              frameborder="0"
+              allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Important Things to Consider -->
+      <section class="important">
+        <div class="conteiner">
+          <h2 class="important__title h2">Important Things to Consider</h2>
+          <p class="important__text">
+            Depending on your circumstances and what is important to you, a
+            lease could be a great option for your next vehicle. Below are some
+            important factors that may influence your decision.
+          </p>
+          <ul class="important__list">
+            <li class="important__item">
+              <img
+                src="images/consider1.jpeg"
+                alt="consider"
+                class="important__item-img"
+              />
+              <p class="important__item-text">
+                Monthly payments on leases are generally 20% - 30% cheaper than
+                loans
+              </p>
+            </li>
+            <li class="important__item">
+              <img
+                src="images/consider2.jpeg"
+                alt="consider"
+                class="important__item-img"
+              />
+              <p class="important__item-text">
+                You may be eligible for a tax break if you use the leased
+                vehicle for business purposes
+              </p>
+            </li>
+            <li class="important__item">
+              <img
+                src="images/consider3.jpeg"
+                alt="consider"
+                class="important__item-img"
+              />
+              <p class="important__item-text">
+                Easy to upgrade to the newest vehicle model every few years
+              </p>
+            </li>
+            <li class="important__item">
+              <img
+                src="images/consider4.jpeg"
+                alt="consider"
+                class="important__item-img"
+              />
+              <p class="important__item-text">
+                There are often fees charged if you drive more than your lease's
+                mileage allowance
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="conteiner">
+          <div class="footer__conteiner-link">
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Products</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Used</li>
+                <li class="footer__item">New</li>
+                <li class="footer__item">Sell your car</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Resources</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Blog</li>
+                <li class="footer__item">FAQ</li>
+                <li class="footer__item">Contact us</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">Work With TrueCar</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Dealers</li>
+                <li class="footer__item">Partners</li>
+              </ul>
+            </div>
+            <div class="footer__content-link">
+              <h3 class="footer__title h3">About</h3>
+              <ul class="footer__list">
+                <li class="footer__item">About us</li>
+                <li class="footer__item">Team</li>
+                <li class="footer__item">Careers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__conteiner-mob">
+            <img src="images/icon-apple.svg" alt="apple" class="footer__img" />
+            <img
+              src="images/icon-google.svg"
+              alt="google"
+              class="footer__img"
+            />
+          </div>
+          <p class="footer__text">
+            For questions about the TrueCar Auto Buying Service please call
+            1-888-878-3227. Certified Dealers are contractually obligated by
+            TrueCar to meet certain customer service requirements and complete
+            the TrueCar Dealer Certification Program. TrueCar does not broker,
+            sell, or lease motor vehicles. Unless otherwise noted, all vehicles
+            shown on this website are offered for sale by licensed motor vehicle
+            dealers. All vehicles are subject to prior sale. By accessing this
+            website, you agree to the TrueCar Terms of Service and Privacy
+            Policy.
+          </p>
+          <ul class="footer__conteiner-text">
+            <li class="footer__text-item">Terms of Service</li>
+            <li class="footer__text-item">Privacy Policy</li>
+            <li class="footer__text-item">Do Not Sell My Personal Information</li>
+          </ul>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
